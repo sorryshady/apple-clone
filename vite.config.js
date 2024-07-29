@@ -6,25 +6,7 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react(), sentryVitePlugin({
     org: "akhil-nishad",
-    project: "iphone-clone"
-  }), sentryVitePlugin({
-    org: "akhil-nishad",
-    project: "iphone-clone"
-  }), sentryVitePlugin({
-    org: "akhil-nishad",
-    project: "iphone-clone"
-  }), sentryVitePlugin({
-    org: "akhil-nishad",
-    project: "iphone-clone"
-  }), sentryVitePlugin({
-    org: "akhil-nishad",
-    project: "iphone-clone"
-  }), sentryVitePlugin({
-    org: "akhil-nishad",
-    project: "javascript-react"
-  }), sentryVitePlugin({
-    org: "akhil-nishad",
-    project: "javascript-react"
+    project: "frontend"
   })],
 
   build: {
