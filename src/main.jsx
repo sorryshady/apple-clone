@@ -9,9 +9,12 @@ Sentry.init({
   dsn: 'https://abde85ffd1f5025cc6f3de28b69af769@o4507684230135808.ingest.de.sentry.io/4507684502634576',
   integrations: [
     Sentry.browserTracingIntegration(),
-    Sentry.replayIntegration(),
     Sentry.reactRouterV6BrowserTracingIntegration({
       useEffect: React.useEffect,
+    }),
+    Sentry.replayIntegration({
+      maskAllText: false,
+      blockAllMedia: false,
     }),
   ],
   // Performance Monitoring
